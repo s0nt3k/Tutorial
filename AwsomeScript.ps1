@@ -1,3 +1,4 @@
+Function Invoke-MyScript {
 Clear-Host
 Write-Host "Hello s0nt3k!" -ForegroundColor Green
 $Date = Get-Date
@@ -24,3 +25,9 @@ Write-Host "Let's get started!" -ForegroundColor Green
     $ScriptContent | Out-File -FilePath $ScriptPath -Encoding UTF8
     Write-Host "Your script '$ScriptName.ps1' has been created successfully at '$ScriptPath'." -ForegroundColor Green
 }
+
+Write-Host "You can run your script by executing: .\$ScriptName.ps1" -ForegroundColor Cyan
+Write-Host "Thank you for using Scriptify! Happy scripting!" -ForegroundColor Yellow
+}
+
+Invoke-MyScript
